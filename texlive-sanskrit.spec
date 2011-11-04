@@ -79,6 +79,7 @@ available.
 #- source
 %doc %{_texmfdistdir}/source/latex/sanskrit/skt.c
 %doc %{_texmfdistdir}/source/latex/sanskrit/sktdoc.skt
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -89,3 +90,5 @@ available.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
