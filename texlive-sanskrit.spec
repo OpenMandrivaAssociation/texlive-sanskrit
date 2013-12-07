@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-sanskrit
 Version:	20070114
-Release:	4
+Release:	5
 Summary:	Sanskrit support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/sanskrit
