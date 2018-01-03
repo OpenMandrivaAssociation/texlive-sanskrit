@@ -1,12 +1,6 @@
-# revision 15878
-# category Package
-# catalog-ctan /language/sanskrit
-# catalog-date 2007-01-14 10:43:12 +0100
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-sanskrit
-Version:	20070114
-Release:	10
+Version:	2.2.1
+Release:	1
 Summary:	Sanskrit support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/sanskrit
@@ -34,41 +28,12 @@ available.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/fonts/map/dvips/sanskrit/skt.map
-%{_texmfdistdir}/fonts/source/public/sanskrit/skt10.mf
-%{_texmfdistdir}/fonts/source/public/sanskrit/skt8.mf
-%{_texmfdistdir}/fonts/source/public/sanskrit/skt9.mf
-%{_texmfdistdir}/fonts/source/public/sanskrit/sktb10.mf
-%{_texmfdistdir}/fonts/source/public/sanskrit/sktbs10.mf
-%{_texmfdistdir}/fonts/source/public/sanskrit/sktchars.mf
-%{_texmfdistdir}/fonts/source/public/sanskrit/sktdefs.mf
-%{_texmfdistdir}/fonts/source/public/sanskrit/sktf10.mf
-%{_texmfdistdir}/fonts/source/public/sanskrit/sktfs10.mf
-%{_texmfdistdir}/fonts/source/public/sanskrit/sktligs.mf
-%{_texmfdistdir}/fonts/source/public/sanskrit/skts10.mf
-%{_texmfdistdir}/fonts/tfm/public/sanskrit/skt10.tfm
-%{_texmfdistdir}/fonts/tfm/public/sanskrit/skt8.tfm
-%{_texmfdistdir}/fonts/tfm/public/sanskrit/skt9.tfm
-%{_texmfdistdir}/fonts/tfm/public/sanskrit/sktb10.tfm
-%{_texmfdistdir}/fonts/tfm/public/sanskrit/sktbs10.tfm
-%{_texmfdistdir}/fonts/tfm/public/sanskrit/sktf10.tfm
-%{_texmfdistdir}/fonts/tfm/public/sanskrit/sktfs10.tfm
-%{_texmfdistdir}/fonts/tfm/public/sanskrit/skts10.tfm
-%{_texmfdistdir}/fonts/type1/public/sanskrit/skt10.pfb
-%{_texmfdistdir}/fonts/type1/public/sanskrit/skt8.pfb
-%{_texmfdistdir}/fonts/type1/public/sanskrit/skt9.pfb
-%{_texmfdistdir}/fonts/type1/public/sanskrit/sktb10.pfb
-%{_texmfdistdir}/fonts/type1/public/sanskrit/sktbs10.pfb
-%{_texmfdistdir}/fonts/type1/public/sanskrit/sktf10.pfb
-%{_texmfdistdir}/fonts/type1/public/sanskrit/sktfs10.pfb
-%{_texmfdistdir}/fonts/type1/public/sanskrit/skts10.pfb
-%{_texmfdistdir}/tex/latex/sanskrit/ot1skt.fd
-%{_texmfdistdir}/tex/latex/sanskrit/skt.sty
-%doc %{_texmfdistdir}/doc/latex/sanskrit/readme.txt
-%doc %{_texmfdistdir}/doc/latex/sanskrit/sktdoc.pdf
+%{_texmfdistdir}/fonts/source/public/sanskrit
+%{_texmfdistdir}/fonts/tfm/public/sanskrit
+%{_texmfdistdir}/tex/latex/sanskrit
+%doc %{_texmfdistdir}/doc/latex/sanskrit
 #- source
-%doc %{_texmfdistdir}/source/latex/sanskrit/skt.c
-%doc %{_texmfdistdir}/source/latex/sanskrit/sktdoc.skt
+%doc %{_texmfdistdir}/source/latex/sanskrit
 
 #-----------------------------------------------------------------------
 %prep
@@ -79,17 +44,3 @@ available.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070114-2
-+ Revision: 755786
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070114-1
-+ Revision: 719478
-- texlive-sanskrit
-- texlive-sanskrit
-- texlive-sanskrit
-- texlive-sanskrit
-
