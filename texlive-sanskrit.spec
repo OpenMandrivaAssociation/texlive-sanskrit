@@ -1,6 +1,6 @@
 Name:		texlive-sanskrit
 Version:	64502
-Release:	1
+Release:	2
 Summary:	Sanskrit support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/sanskrit
