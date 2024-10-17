@@ -3,7 +3,7 @@ Version:	64502
 Release:	2
 Summary:	Sanskrit support
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/language/sanskrit
+URL:		https://www.ctan.org/tex-archive/language/sanskrit
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sanskrit.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/sanskrit.doc.r%{version}.tar.xz
